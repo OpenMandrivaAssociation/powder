@@ -9,7 +9,7 @@ Patch0:		lua5.1.patch
 URL:            http://powder.hardwired.org.uk/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  SDL-devel
-BuildRequires:  fftw3-devel = 3.2.2-4
+BuildRequires:  fftw-devel
 BuildRequires:  lua5.1-devel
 
 %description
