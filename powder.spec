@@ -6,10 +6,12 @@ License:        GPLv2
 Group:          Games/Other
 Source:         %{name}-%{version}.tar.bz2
 Patch0:		lua5.1.patch
+Patch1:		sse.patch
 URL:            http://powder.hardwired.org.uk/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  SDL-devel
 BuildRequires:  fftw-devel
+BuildRequires:  bzip2-devel
 BuildRequires:  lua5.1-devel
 
 %description
@@ -19,6 +21,7 @@ such as volcano or calculator using different materials
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %build
 make
