@@ -1,0 +1,31 @@
+diff -Naur powder-70.1.orig/includes/luaconsole.h powder-70.1/includes/luaconsole.h
+--- powder-70.1.orig/includes/luaconsole.h	2011-12-27 12:31:12.040453879 +0400
++++ powder-70.1/includes/luaconsole.h	2011-12-27 12:31:33.799168893 +0400
+@@ -5,9 +5,9 @@
+ #include <lauxlib.h>
+ #include <lualib.h>
+ #else
+-#include <lua5.1/lua.h>
+-#include <lua5.1/lauxlib.h>
+-#include <lua5.1/lualib.h>
++#include <lua.h>
++#include <lauxlib.h>
++#include <lualib.h>
+ #endif
+ #include <defines.h>
+ 
+diff -Naur powder-70.1.orig/Makefile powder-70.1/Makefile
+--- powder-70.1.orig/Makefile	2011-12-27 12:31:12.042453945 +0400
++++ powder-70.1/Makefile	2011-12-27 12:31:26.566931247 +0400
+@@ -4,9 +4,9 @@
+ 
+ CFLAGS := -w -std=c99 -D_POSIX_C_SOURCE=200112L -DLUACONSOLE -DGRAVFFT -Iincludes/ -D_GNU_SOURCE
+ OFLAGS := -O3 -ffast-math -ftree-vectorize -funsafe-math-optimizations
+-LFLAGS := -lpthread -lSDL -lfftw3f -lm -lbz2 -lX11 -llua5.1 -lrt
++LFLAGS := -lpthread -lSDL -lfftw3f -lm -lbz2 -lX11 -llua -lrt
+ LFLAGS_X := -lm -lbz2 -lSDLmain
+-LFLAGS_WIN := -lmingw32 -lgnurx -lws2_32 -lSDLmain -lpthread -lSDL -lfftw3f -lm -lbz2 -llua5.1
++LFLAGS_WIN := -lmingw32 -lgnurx -lws2_32 -lSDLmain -lpthread -lSDL -lfftw3f -lm -lbz2 -llua
+ MFLAGS_SSE3 := -march=native -DX86 -DX86_SSE3 -msse3
+ MFLAGS_SSE2 := -march=native -DX86 -DX86_SSE2 -msse2
+ MFLAGS_SSE := -march=native -DX86 -DX86_SSE
