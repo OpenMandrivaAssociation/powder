@@ -40,3 +40,14 @@ rm -rf %{buildroot}
 #%{_datadir}/applications/powder.desktop
 %{_datadir}/pixmaps/powder.png
 
+
+
+%changelog
+* Tue Dec 27 2011 Denis Silakov <dsilakov@mandriva.org> 70.1-1
++ Revision: 745551
+- Add sse patch
+- Fix fftw build dependency
+- Import powder sources
+- Import powder
+- Created package structure for powder.
+
