@@ -1,7 +1,7 @@
 Summary:        Physical simulator which allows to construct objects using different materials
 Name:           powder
 Version:        70.1
-Release:        1
+Release:        2
 License:        GPLv2
 Group:          Games/Other
 Source:         %{name}-%{version}.tar.bz2
