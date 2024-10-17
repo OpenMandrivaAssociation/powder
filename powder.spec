@@ -7,7 +7,7 @@ Group:          Games/Other
 Source:         %{name}-%{version}.tar.bz2
 Patch0:		lua5.1.patch
 Patch1:		sse.patch
-URL:            http://powder.hardwired.org.uk/
+URL:            https://powder.hardwired.org.uk/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:  SDL-devel
 BuildRequires:  fftw-devel
