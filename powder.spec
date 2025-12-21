@@ -9,6 +9,7 @@ Patch0:		lua5.1.patch
 Patch1:		sse.patch
 URL:            https://powder.hardwired.org.uk/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
+BuildRequires:	make
 BuildRequires:  SDL-devel
 BuildRequires:  fftw-devel
 BuildRequires:  bzip2-devel
